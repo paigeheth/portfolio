@@ -1,0 +1,188 @@
+.circle-container {
+    width: 50%;
+    height: 100%;
+    flex-direction: column;
+    position: absolute;
+    z-index: -1;
+  }
+
+  .circle {
+    top: -75px;
+    left: -100px;
+    border-radius: 50%;
+  }
+
+  /* CIRCLE ANIMATION */
+  .circle:nth-child(1) {
+    width: 60%;
+    height: 50vh;
+    background-color: #5D586C;
+    filter: blur(100px);
+    position: relative;
+    animation: movecollideCircle1 10s infinite linear alternate;
+  }
+
+  @keyframes movecollideCircle1 {
+    0%, 100% {
+      transform: translateY(0) translateX(0) scale(1);
+    }
+    25% {
+        transform: translateY(20px) translateX(50px) scale(1.2);
+      }
+    50% {
+      transform: translateY(40px) translateX(100px) scale(1.5);
+    }
+    75% {
+        transform: translateY(20px) translateX(50px) scale(1.2);
+      }
+  }
+
+  .circle:nth-child(2) {
+    position: relative;
+    top: -75px;
+    left: -50px;
+    width: 40%;
+    height: 40vh;
+    background-color: #787A8A;
+    filter: blur(75px);
+    animation: movecollideCircle2 10s infinite linear alternate;
+  }
+
+  @keyframes movecollideCircle2 {
+    0%, 100% {
+      transform: translateY(0) translateX(0) scale(1);
+    }
+    25% {
+        transform: translateY(20px) translateX(-50px) scale(1.1);
+      }
+    50% {
+      transform: translateY(40px) translateX(-100px) scale(1.2);
+    }
+    75% {
+        transform: translateY(20px) translateX(-50px) scale(1.1);
+      }
+  }
+
+  .circle:nth-child(3) {
+    position: relative;
+    top: -600px;
+    left: 0;
+    width: 60%;
+    height: 60vh;
+    background-color: #90797E;
+    filter: blur(100px);
+    animation: movecollideCircle3 10s infinite linear alternate;
+  }
+
+  @keyframes movecollideCircle3 {
+    0%, 100% {
+      transform: translateY(0) translateX(0) scale(1);
+    }
+    25% {
+        transform: translateY(40px) translateX(20px) scale(1.1);
+      }
+    50% {
+      transform: translateY(60px) translateX(40px) scale(1.2);
+    }
+    75% {
+        transform: translateY(40px) translateX(20px) scale(1.1);
+      }
+  }
+
+  .circle:nth-child(4) {
+    position: relative;
+    top: -600px;
+    left: -50px;
+    width: 20%;
+    height: 20vh;
+    background-color: #B79F9D;
+    filter: blur(75px);
+    animation: movecollideCircle4 10s infinite linear alternate;
+  }
+  
+  @keyframes movecollideCircle4 {
+    0%, 100% {
+      transform: translateY(0) translateX(0) scale(1);
+    }
+    25% {
+        transform: translateY(-20px) translateX(-20px) scale(1.1);
+      }
+    50% {
+      transform: translateY(-40px) translateX(-40px) scale(1.2);
+    }
+    75% {
+        transform: translateY(-20px) translateX(-20px) scale(1.1);
+      }
+  }
+  /* CIRCLE ANIMATION END*/
+
+  
+.landing-box {
+  padding: 5rem;
+  padding-left: 30rem;
+}
+
+.landing-box h1 {
+  padding-bottom: 1rem;
+}
+
+.project-list {
+  padding-left: 1rem;
+}
+
+.six-hundred-max-width {
+  max-width: 600px;
+  margin-left: 0;
+  border-color: #d4d4d4;
+}
+
+#thumbwrap {
+	position:relative;
+}
+
+.thumb span { 
+	position:absolute;
+	visibility:hidden;
+}
+
+.thumb:hover, .thumb:hover span { 
+	visibility:visible;
+	top:0;
+	left:250px; 
+	z-index:1;
+}
+
+.hover-image, .hover-image-2 {
+  opacity: 0; /* Start with 0 opacity */
+  position: absolute; /* Use absolute positioning for each image */
+  width: 33%;
+  border-radius: 1rem;
+  transition: opacity 0.5s ease-in-out; /* Add a transition effect */
+  pointer-events: none;
+}
+
+.thumb:hover .hover-image {
+  opacity: 1; /* Set opacity to 1 on hover */
+}
+
+.thumb:hover .hover-image-2 {
+  opacity: 1; /* Set opacity to 1 on hover */
+}
+
+/* SMALL LAPTOP */
+@media only screen and (max-width: 1000px) {
+    .landing-box {
+        padding-left: 15rem;}
+  }
+
+  /* TABLET */
+  @media only screen and (max-width: 725px) {
+    .landing-box {
+        padding-left: 5rem;}
+  }
+
+/* MOBILE */
+@media only screen and (max-width: 530px) {
+    .landing-box {
+        padding-left: 3.5rem;}
+  }

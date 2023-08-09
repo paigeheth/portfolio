@@ -1,0 +1,9 @@
+@font-face {
+	font-family: 'sf-medium';
+	src: url('fonts/SFPRODISPLAYMEDIUM.OTF') format('opentype');
+}
+
+@font-face {
+  font-family: 'sf-regular';
+  src: url('fonts/SFPRODISPLAYREGULAR.OTF') format("opentype");
+}

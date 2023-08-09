@@ -1,0 +1,61 @@
+.colorboxlayout-projects {
+    display: flex;
+    flex: 1 1 15em;
+    color: black;
+  }
+ 
+  /* .colorboxdarkpink {
+    background-color: #90797E;
+    margin: 1rem;
+    padding: 2.5rem;
+    border-radius: 25px;
+  }
+ 
+  .colorboxlightpink {
+    background-color: #B79F9D;
+    margin: 1rem;
+    padding: 2.5rem;
+    border-radius: 25px;
+  }
+ 
+  .colorboxlightpurple {
+    background-color: #787A8A;
+    margin: 1rem;
+    padding: 2.5rem;
+    border-radius: 25px;
+  }
+ 
+  .colorboxdarkpurple {
+    background-color: #5D586C;
+    margin: 1rem;
+    padding: 2.5rem;
+    border-radius: 25px;
+  } */
+
+  .colorboxpurple {
+    background-color: #e0bfff;;
+    margin: 1rem;
+    padding: 2.5rem;
+    border-radius: 25px;
+  }
+
+  .colorboxorange {
+    background-color: #ffbc91;
+    margin: 1rem;
+    padding: 2.5rem;
+    border-radius: 25px;
+  }
+
+  .colorboxblue {
+    background-color: #519aed;
+    margin: 1rem;
+    padding: 2.5rem;
+    border-radius: 25px;
+  }
+
+
+  @media only screen and (max-width: 1000px) {
+    .colorboxlayout, .colorboxlayout-projects {
+      flex-direction: column;
+    }
+  }

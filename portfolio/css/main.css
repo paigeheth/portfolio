@@ -1,0 +1,263 @@
+body {
+  background-color: rgb(23, 23, 23);
+  color: white;
+}
+
+h1 {
+   font-family: "sf-medium", sans-serif;
+    font-size: 5rem;
+    margin-bottom: 0;
+}
+
+.light-orange-text {
+  color: #ffbc91;
+}
+
+.light-blue-text {
+  color: #519aed;
+}
+
+.white-text {
+  color: white;
+}
+
+h2 {
+  font-family: "sf-regular", sans-serif;
+   font-size: 1.5rem;
+   margin-bottom: 1rem;
+}
+
+h3 {
+  font-family: "sf-regular", sans-serif;
+   font-size: 1.25rem;
+   margin-top: 0;
+   color: #d4d4d4;
+   max-width: 600px;
+}
+
+h4 {
+  font-family: "sf-medium", sans-serif;
+   font-size: 1rem;
+}
+
+
+p, ol, ul, a {
+  font-family: "sf-regular", sans-serif;
+   font-size: 1rem;
+   max-width: 750px;
+   color: #AFAFAF;
+   padding-bottom: .5rem;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  margin: .5rem;
+  transition: color 0.5s ease-out;
+}
+
+a:hover, a:active, a:focus {
+  color: #e0bfff;
+}
+
+.footer-text {
+  font-family: "sf-medium", sans-serif;
+   font-size: 1rem;
+   max-width: 750px;
+   color:white;
+   padding-bottom: .5rem;
+}
+
+.white-text {
+  color: white;
+}
+
+/* NAVIGATION */
+.nav-main {
+  margin-right: 3rem;
+  margin-left: 3rem;
+  padding: 1rem;
+  overflow: hidden;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: right;
+  overflow: hidden;
+  font-family: "sf-regular", sans-serif;
+  padding-bottom: .5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(38, 38, 38);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 0px 0px 16px 16px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  transition: color 0.5s ease-out;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color:  #e0bfff;
+  color: black;
+  border-radius: 0px 0px 8px 8px;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+.paige {
+  font-family: "sf-medium", sans-serif;
+  float: left;
+  font-size: 1.25rem;
+}
+
+
+.resume {
+  float: right;
+  padding-left: .5rem;
+  padding-right: .5rem;
+  padding-top: .3rem;
+}
+
+.footer-whole {
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+}
+
+.two-column-flex {
+  display: flex;
+}
+
+.nav-content-box {
+  flex: 1;
+  margin-right: 5rem;
+  align-self: flex-end;
+}
+
+.four-column-flex-footer {
+  display: flex;
+  width: 100%;
+}
+
+.no-margin {
+  margin: 0;
+  margin-bottom: 1rem;;
+}
+
+
+/* SMALL LAPTOP */
+@media only screen and (max-width: 1000px) {
+  h3 {
+      max-width: 450px;
+      font-size: 1.1rem;
+  }
+  h2 {
+    font-size: 1.25rem;
+  }
+  h1 {
+      font-size: 4rem;
+  }
+  .nav-main {
+    padding-left: 0rem;
+}
+  .four-column-flex-footer {
+    float: left;
+  }
+}
+
+/* TABLET */
+@media only screen and (max-width: 725px) {
+  p, ol, ul {
+    font-size: .95rem;
+  }
+  h3 {
+      max-width: 400px;
+      font-size: 1rem;
+  }
+  h2 {
+    font-size: 1.15rem;
+  }
+  h1 {
+      font-size: 3.5rem;
+  }
+  .two-column-flex {
+    flex-direction: column;
+  }
+  .footer-whole {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+
+/* MOBILE */
+@media only screen and (max-width: 530px) {
+  .nav-main {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  .right-contents {
+    float: left;
+    flex-direction: column;
+  }
+  .dropdown {
+    padding-left: 0;
+  }
+  .dropdown .dropbtn {
+    margin-left: -8px;
+  }
+  p, ol, ul {
+    font-size: .75rem;
+  }
+  h3 {
+    max-width: 350px;
+    font-size: .9rem;
+  }
+  h2 {
+    font-size: 1rem;
+  }
+  h1 {
+    font-size: 2.25rem;
+  }
+  .footer-whole {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .nav-content-box {
+    margin-right:0;
+  }
+}
